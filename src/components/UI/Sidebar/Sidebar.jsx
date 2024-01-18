@@ -1,4 +1,4 @@
-import styles from './Sidebar.module.scss'
+import styles from './SIdebar.module.scss'
 
 const menu = ['Popular', 'TV Shows', 'Films', 'My list']
 
