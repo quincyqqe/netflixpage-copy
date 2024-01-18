@@ -1,0 +1,61 @@
+.container {
+	margin-top: 15px;
+	margin-left: 150px;
+	margin-right: 150px;
+}
+
+hr {
+	background-image: linear-gradient(
+		to right,
+		transparent,
+		#5a5a5a,
+		transparent
+	);
+	height: 1px;
+	border: none;
+	margin: 20px 0 20px 0;
+}
+
+p {
+	color: #a3a3a3;
+	text-align: center;
+}
+
+.title {
+	color: #fff;
+	font-size: 30px;
+	font-weight: 400;
+	line-height: 34px;
+	margin-top: 30px;
+
+	> span {
+		color: #777;
+		font-size: 20px;
+	}
+}
+
+.scroll__container {
+	overflow-x: auto;
+	white-space: nowrap; /* предотвращает перенос текста на новую строку */
+}
+
+.container__videos {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.row {
+	display: flex;
+	justify-content: space-around; /* Распределяем элементы по горизонтали с равными промежутками */
+	margin: 10px 0; /* Добавляем отступ сверху и снизу между рядами */
+}
+
+iframe {
+	height: 320px;
+	width: 570px;
+	margin-right: 20px;
+	border: none;
+	margin-bottom: 20px;
+	flex-shrink: 0;
+}

@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+body,
+html,
+section {
+	background-color: #0f1011;
+	font-family: 'Montserrat', sans-serif;
+	scroll-snap-type: y mandatory;
+}
+
+body {
+	margin: 0;
+
+	font-size: 16px;
+	padding: 0;
+}
+
+section {
+	scroll-snap-align: center;
+	scroll-snap-stop: always;
+}
+
+button {
+	cursor: pointer;
+}
