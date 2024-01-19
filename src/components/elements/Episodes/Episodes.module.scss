@@ -47,8 +47,8 @@ p {
 
 .row {
 	display: flex;
-	justify-content: space-around; /* Распределяем элементы по горизонтали с равными промежутками */
-	margin: 10px 0; /* Добавляем отступ сверху и снизу между рядами */
+	justify-content: center; /* Распределяем элементы по горизонтали с равными промежутками */
+	margin: 20px 0; /* Добавляем отступ сверху и снизу между рядами */
 }
 
 iframe {
@@ -62,13 +62,26 @@ iframe {
 
 @media screen and (max-width: 768px) {
 	p {
-		font-size: 10px;
+		font-size: 12px;
 		
-		justify-content: center;
+
 	}
 	.container {
 		margin-top: 15px;
 		margin-left: 10px;
 		margin-right: 10px;
+	}
+
+	.row {
+		display: flex;
+		flex-direction: column;
+		margin-left: 45px;
+	}
+
+	iframe {
+		border: none;
+		display: block;
+		width: 300px;
+		height: 220px;
 	}
 }

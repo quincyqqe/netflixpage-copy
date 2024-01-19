@@ -27,7 +27,7 @@ h3 {
 	color: #a3a3a3;
 }
 
-p {
+.paragraph {
 	color: #fff;
 	font-size: 14px;
 	font-weight: 400;
@@ -37,20 +37,25 @@ p {
 }
 
 @media screen and (max-width: 768px) {
- .container {
-    display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: row;
-	font-size: 10px;
-	padding-left: 30px;
- }
+	.container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: row;
+		font-size: 10px;
+		padding-left: 30px;
+	}
 
- .header {
-	flex-direction: row;
-	text-align: start;
-	justify-content: start;
-	margin-left: 20px;
-	
- }
+	.header {
+		flex-direction: row;
+		text-align: start;
+		justify-content: start;
+		margin-left: 20px;
+	}
+
+	.paragraph {
+		font-size: 12px;
+	}
+
+
 }

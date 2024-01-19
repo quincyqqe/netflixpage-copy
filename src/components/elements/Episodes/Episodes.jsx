@@ -30,8 +30,6 @@ const Episodes = () => {
 							allowFullScreen
 						></iframe>
 					</div>
-
-					<div className={styles.row}></div>
 				</div>
 			</div>
 		</div>
