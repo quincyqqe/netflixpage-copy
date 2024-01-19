@@ -10,7 +10,6 @@
 		background-position: center;
 		background-repeat: no-repeat;
 		position: relative;
-		
 
 		&::before {
 			content: '';
@@ -20,7 +19,6 @@
 			position: absolute;
 			top: 0;
 			left: 0;
-			
 		}
 	}
 
@@ -47,8 +45,14 @@
 			color: $gray;
 			margin-bottom: 3rem;
 			line-height: 1.65;
-			 overflow-wrap: break-word;
-			 max-width: 400px;
+			overflow-wrap: break-word;
+			max-width: 400px;
 		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.wrapper {
+		display: block;
 	}
 }

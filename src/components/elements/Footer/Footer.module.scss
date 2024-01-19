@@ -38,6 +38,7 @@
 	color: #a9a9a9;
 	text-decoration: none;
 	display: block;
+	text-align: center;
 }
 
 .footerColumn a:hover {
@@ -54,4 +55,13 @@ hr {
 	height: 1px;
 	border: none;
 	margin: 20px 0 20px 0;
+}
+
+
+@media screen and (max-width: 768px) {
+ .footerContainer {
+    display: flex;
+	justify-content: center;
+	font-size: 12px;
+ }
 }

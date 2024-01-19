@@ -53,9 +53,22 @@ p {
 
 iframe {
 	height: 320px;
-	width: 570px;
+	width: 500px;
 	margin-right: 20px;
 	border: none;
 	margin-bottom: 20px;
 	flex-shrink: 0;
+}
+
+@media screen and (max-width: 768px) {
+	p {
+		font-size: 10px;
+		
+		justify-content: center;
+	}
+	.container {
+		margin-top: 15px;
+		margin-left: 10px;
+		margin-right: 10px;
+	}
 }

@@ -35,3 +35,22 @@ p {
 	margin-right: 15px;
 	padding-right: 40px;
 }
+
+@media screen and (max-width: 768px) {
+ .container {
+    display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	font-size: 10px;
+	padding-left: 30px;
+ }
+
+ .header {
+	flex-direction: row;
+	text-align: start;
+	justify-content: start;
+	margin-left: 20px;
+	
+ }
+}
