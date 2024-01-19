@@ -7,20 +7,17 @@ import MoreDetails from './components/elements/MoreDetails/MoreDetails'
 function App() {
 	return (
 		<>
-			<section>
+			<header>
 				<Header />
+			</header>
+			<main>
 				<Main />
-			</section>
-
-			<section>
 				<Episodes />
-
 				<MoreDetails />
-			</section>
-
-			<section>
+			</main>
+			<footer>
 				<Footer />
-			</section>
+			</footer>
 		</>
 	)
 }
