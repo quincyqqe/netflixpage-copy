@@ -1,0 +1,79 @@
+.bg {
+	background: linear-gradient(-45deg, #000000, #5e1732, #1c6e89, #06acff);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.sign-in {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: transparent;
+}
+
+.sign-in form {
+	width: 100%;
+	max-width: 400px;
+	margin: 0 auto;
+	background-color: #141414;
+	padding: 30px;
+	border-radius: 10px;
+	box-shadow: 0px 0px 35px 0px rgba(0, 0, 0, 0.75);
+}
+
+.sign-in form h2 {
+	text-align: center;
+	color: #ffffff;
+	margin-bottom: 20px;
+}
+
+.sign-in form input {
+	width: 95%;
+	padding: 10px;
+	margin-bottom: 20px;
+	border: none;
+	border-radius: 5px;
+	background-color: #222;
+	color: #ffffff;
+}
+
+.sign-in form button {
+	width: 100%;
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	background-color: #e50914;
+	color: #ffffff;
+	cursor: pointer;
+}
+
+.sign-in form button:hover {
+	background-color: #b70811;
+}
+
+@media only screen and (max-width: 600px) {
+  .sign-in form {
+    width: 80%;
+  }
+
+  .sign-in button {
+	display: flex;
+	text-align: center;
+	justify-content: center;
+  }
+}

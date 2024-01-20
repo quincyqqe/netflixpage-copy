@@ -1,89 +1,82 @@
 .container {
-	margin-top: 15px;
-	margin-left: 150px;
-	margin-right: 150px;
+  margin-top: 15px;
+  margin-left: 20px; /* Adjust margin for smaller screens */
+  margin-right: 20px; /* Adjust margin for smaller screens */
 }
 
 hr {
-	background-image: linear-gradient(
-		to right,
-		transparent,
-		#5a5a5a,
-		transparent
-	);
-	height: 1px;
-	border: none;
-	margin: 20px 0 20px 0;
+  background-image: linear-gradient(to right, transparent, #5a5a5a, transparent);
+  height: 1px;
+  border: none;
+  margin: 10px 0; /* Adjust margin for smaller screens */
 }
 
 p {
-	color: #a3a3a3;
-	text-align: center;
+  color: #a3a3a3;
+  text-align: center;
 }
 
 .title {
-	color: #fff;
-	font-size: 30px;
-	font-weight: 400;
-	line-height: 34px;
-	margin-top: 30px;
+  color: #fff;
+  font-size: 24px; /* Adjust font size for smaller screens */
+  font-weight: 400;
+  line-height: 28px; /* Adjust line height for smaller screens */
+  margin-top: 20px; /* Adjust margin for smaller screens */
+  margin-left: 100px;
 
-	> span {
-		color: #777;
-		font-size: 20px;
-	}
+  > span {
+    color: #777;
+    font-size: 16px; /* Adjust font size for smaller screens */
+  }
 }
 
 .scroll__container {
-	overflow-x: auto;
-	white-space: nowrap; /* предотвращает перенос текста на новую строку */
+  overflow-x: auto;
+  white-space: nowrap;
 }
 
 .container__videos {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .row {
-	display: flex;
-	justify-content: center; /* Распределяем элементы по горизонтали с равными промежутками */
-	margin: 20px 0; /* Добавляем отступ сверху и снизу между рядами */
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next row on smaller screens */
+  justify-content: center;
+  margin: 10px 0; /* Adjust margin for smaller screens */
 }
-
 
 iframe {
-	height: 320px;
-	width: 570px;
-	margin-right: 20px;
-	border: none;
-	margin-bottom: 20px;
-	flex-shrink: 0;
+  height: 240px; /* Adjust height for smaller screens */
+  width: 100%; /* Make the iframe full width on smaller screens */
+  margin-right: 0; /* Remove right margin on smaller screens */
+  margin-bottom: 10px; /* Adjust margin for smaller screens */
+  flex-shrink: 0;
 }
 
+/* Media Query for Tablets and Larger Screens */
+@media (min-width: 768px) {
+  .container {
+    margin-left: 50px; /* Adjust margin for tablets */
+    margin-right: 50px; /* Adjust margin for tablets */
+  }
 
-@media screen and (max-width: 768px) {
-	p {
-		font-size: 12px;
-		
+  .title {
+    font-size: 30px;
+    line-height: 34px;
+    margin-top: 30px;
+    
+  }
 
-	}
-	.container {
-		margin-top: 15px;
-		margin-left: 10px;
-		margin-right: 10px;
-	}
+  iframe {
+    border: none;
+    height: 320px;
+    width: 570px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    
+  }
 
-	.row {
-		display: flex;
-		flex-direction: column;
-		margin-left: 45px;
-	}
-
-	iframe {
-		border: none;
-		display: block;
-		width: 300px;
-		height: 220px;
-	}
 }
