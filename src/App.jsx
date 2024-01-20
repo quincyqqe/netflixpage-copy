@@ -25,7 +25,7 @@ function App() {
 		<Router basename='/netflixpage-copy/'>
 			<Routes>
 				<Route path='login' element={<LoginPage />} />
-				<Route path='/*' element={<MultiComponentContainer />} />
+				<Route exact path='/' element={<MultiComponentContainer />} />
 			</Routes>
 		</Router>
 	)
